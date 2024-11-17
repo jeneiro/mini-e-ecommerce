@@ -1,0 +1,25 @@
+/* Global styles or Layout component */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the layout fills the entire viewport */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* This will push the footer to the bottom if content is less */
+  }
+  
+  .footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  

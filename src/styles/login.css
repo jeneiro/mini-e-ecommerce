@@ -1,0 +1,34 @@
+/* Container to hold the form and image */
+.login-container {
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form container */
+  .form-container {
+    flex: 1;
+    padding: 40px;
+    max-width: 500px; /* Optional: Adjust to control form width */
+    box-sizing: border-box;
+  }
+  
+  /* Image container (will be displayed only on desktop) */
+  .image-container {
+    flex: 1;
+    display: none;
+  }
+  
+  /* For Desktop: Show image and align side by side */
+  @media (min-width: 1024px) {
+    .image-container {
+      display: block;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures image covers the full area */
+    }
+  }
+  
